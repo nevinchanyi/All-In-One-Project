@@ -15,6 +15,8 @@
 		6CCF802A25ACE075000D07F0 /* All_In_One_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF802825ACE075000D07F0 /* All_In_One_Project.xcdatamodeld */; };
 		6CCF803525ACE075000D07F0 /* All_In_One_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF803425ACE075000D07F0 /* All_In_One_ProjectTests.swift */; };
 		6CCF804025ACE075000D07F0 /* All_In_One_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF803F25ACE075000D07F0 /* All_In_One_ProjectUITests.swift */; };
+		6CCF805125ACE08B000D07F0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF805025ACE08B000D07F0 /* Home.swift */; };
+		6CCF805625ACE0A7000D07F0 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF805525ACE0A7000D07F0 /* FaceIDView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6CCF803B25ACE075000D07F0 /* All In One ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All In One ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCF803F25ACE075000D07F0 /* All_In_One_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All_In_One_ProjectUITests.swift; sourceTree = "<group>"; };
 		6CCF804125ACE075000D07F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCF805025ACE08B000D07F0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6CCF805525ACE0A7000D07F0 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				6CCF801D25ACE071000D07F0 /* All_In_One_ProjectApp.swift */,
 				6CCF801F25ACE071000D07F0 /* ContentView.swift */,
+				6CCF805025ACE08B000D07F0 /* Home.swift */,
+				6CCF805525ACE0A7000D07F0 /* FaceIDView.swift */,
 				6CCF802125ACE075000D07F0 /* Assets.xcassets */,
 				6CCF802625ACE075000D07F0 /* Persistence.swift */,
 				6CCF802B25ACE075000D07F0 /* Info.plist */,
@@ -267,7 +273,9 @@
 			files = (
 				6CCF802725ACE075000D07F0 /* Persistence.swift in Sources */,
 				6CCF802A25ACE075000D07F0 /* All_In_One_Project.xcdatamodeld in Sources */,
+				6CCF805125ACE08B000D07F0 /* Home.swift in Sources */,
 				6CCF802025ACE071000D07F0 /* ContentView.swift in Sources */,
+				6CCF805625ACE0A7000D07F0 /* FaceIDView.swift in Sources */,
 				6CCF801E25ACE071000D07F0 /* All_In_One_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
