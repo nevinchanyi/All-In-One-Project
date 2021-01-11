@@ -7,19 +7,22 @@
 
 import SwiftUI
 
+
+class FormsViewClass: ObservableObject {
+    @State var textField = ""
+    @State var secureField = ""
+}
+
+
 struct FormsView: View {
-    @State private var textField = ""
-    @State private var secureField = ""
-    
+    @StateObject var controlls = FormsViewClass()
     
     var body: some View {
-        NavigationView {
             Form {
                 Section(header: Text("header"), footer: Text("footer")) {
-                    TextField("This is an text field", text: $textField)
-                    SecureField("Secure field", text: $secureField)
+                    TextField("This is an text field", text: $controlls.textField)
+                    SecureField("Secure field", text: $controlls.secureField)
                     Button(action: {
-                        
                         
                         hideKeyboard()
                     }, label: {
@@ -27,7 +30,6 @@ struct FormsView: View {
                     })
                 }
             }
-        }
         .navigationTitle("Forms")
         .onTapGesture { hideKeyboard() }
     }
