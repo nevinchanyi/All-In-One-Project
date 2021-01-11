@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct Home: View {
+    @State private var textField = ""
+    @State private var secureField = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            Form {
+                Section(header: Text("header"), footer: Text("footer")) {
+                    TextField("This is an text field", text: $textField)
+                    SecureField("Secure field", text: $secureField)
+                }
+                
+                
+                Button(action: {
+                    
+                }, label: {
+                    Text("Action")
+                })
+            }
+            
+            .navigationTitle("List")
+        }
     }
 }
 
