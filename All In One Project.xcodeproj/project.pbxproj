@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C54578A25ADC86A001D4E14 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C54578925ADC86A001D4E14 /* CardsView.swift */; };
 		6CCF801E25ACE071000D07F0 /* All_In_One_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF801D25ACE071000D07F0 /* All_In_One_ProjectApp.swift */; };
 		6CCF802025ACE071000D07F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF801F25ACE071000D07F0 /* ContentView.swift */; };
 		6CCF802225ACE075000D07F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF802125ACE075000D07F0 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C54578925ADC86A001D4E14 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		6CCF801A25ACE071000D07F0 /* All In One Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All In One Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCF801D25ACE071000D07F0 /* All_In_One_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All_In_One_ProjectApp.swift; sourceTree = "<group>"; };
 		6CCF801F25ACE071000D07F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				6CCF801F25ACE071000D07F0 /* ContentView.swift */,
 				6CCF805025ACE08B000D07F0 /* Home.swift */,
 				6CCF805B25ACE6AA000D07F0 /* FormsView.swift */,
+				6C54578925ADC86A001D4E14 /* CardsView.swift */,
 				6CCF805525ACE0A7000D07F0 /* FaceIDView.swift */,
 				6CCF802125ACE075000D07F0 /* Assets.xcassets */,
 				6CCF802625ACE075000D07F0 /* Persistence.swift */,
@@ -276,6 +279,7 @@
 			files = (
 				6CCF802725ACE075000D07F0 /* Persistence.swift in Sources */,
 				6CCF802A25ACE075000D07F0 /* All_In_One_Project.xcdatamodeld in Sources */,
+				6C54578A25ADC86A001D4E14 /* CardsView.swift in Sources */,
 				6CCF805125ACE08B000D07F0 /* Home.swift in Sources */,
 				6CCF802025ACE071000D07F0 /* ContentView.swift in Sources */,
 				6CCF805C25ACE6AA000D07F0 /* FormsView.swift in Sources */,

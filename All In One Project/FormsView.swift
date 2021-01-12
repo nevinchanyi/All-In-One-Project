@@ -17,19 +17,49 @@ class FormsViewClass: ObservableObject {
 struct FormsView: View {
     @StateObject var controlls = FormsViewClass()
     
+    @State var selectedDate = Date()
+
+    var dateClosedRange: ClosedRange<Date> {
+        let min = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+        let max = Calendar.current.date(byAdding: .day, value: 7, to: Date())!
+        return min...max
+    }
+    
+    
+    @State var progress: Float = 0
+
     var body: some View {
-            Form {
-                Section(header: Text("header"), footer: Text("footer")) {
-                    TextField("This is an text field", text: $controlls.textField)
-                    SecureField("Secure field", text: $controlls.secureField)
-                    Button(action: {
-                        
-                        hideKeyboard()
-                    }, label: {
-                        Text("Action")
-                    })
-                }
+        Form {
+            Section(header: Text("header"), footer: Text("footer")) {
+                TextField("This is an text field", text: $controlls.textField)
+                SecureField("Secure field", text: $controlls.secureField)
+                Button(action: {
+                    
+                    hideKeyboard()
+                }, label: {
+                    Text("Action")
+                })
             }
+            
+            Section {
+                DatePicker(
+                    selection: $selectedDate,
+                    in: dateClosedRange,
+                    displayedComponents: .date,
+                    label: { Text("Due Date") }
+                )
+                
+            }
+            
+            
+            Section {
+                Slider(value: $progress, in: 0...100) { changed in
+                    print("changed: \(progress)")
+                }
+
+            }
+            
+        }
         .navigationTitle("Forms")
         .onTapGesture { hideKeyboard() }
     }

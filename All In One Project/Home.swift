@@ -15,6 +15,7 @@ struct Home: View {
         NavigationView {
             List {
                 NavigationLink("Forms", destination: FormsView())
+                NavigationLink("Cards", destination: CardsView())
             }
             
             
